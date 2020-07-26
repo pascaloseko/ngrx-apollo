@@ -19,7 +19,13 @@
     "@angular/platform-browser": "~10.0.2",
     "@angular/platform-browser-dynamic": "~10.0.2",
     "@angular/router": "~10.0.2",
+    "@ngrx/effects": "^9.2.0",
+    "@ngrx/store": "^9.2.0",
+    "@ngrx/store-devtools": "^9.2.0",
     "rxjs": "~6.5.5",
+    "rxjs-compat": "^6.6.0",
+    "todomvc-app-css": "^2.1.0",
+    "todomvc-common": "^1.0.4",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.3"
   },

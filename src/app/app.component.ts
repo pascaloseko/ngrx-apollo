@@ -1,10 +1,28 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+
+import { Store } from '@ngrx/store';
+
+import { AppState } from './../redux/app.reducer';
+import { Todo } from './../redux/todo/todo.model';
+import * as TodoActions from './../redux/todo/todo.actions';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  templateUrl: './app.component.html'
 })
-export class AppComponent {
-  title = 'todo-ngrx-graphql';
+export class AppComponent implements OnInit {
+
+  constructor(
+    private store: Store<AppState>,
+  ){}
+
+  // tslint:disable-next-line: typedef
+  ngOnInit() {
+    this.loadTodos();
+  }
+
+  // tslint:disable-next-line: typedef
+  loadTodos() {
+    this.store.dispatch(new TodoActions.LoadTodosAction());
+  }
 }
