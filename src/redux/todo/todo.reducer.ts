@@ -3,6 +3,7 @@ import * as TodoActions from './todo.actions';
 
 const initialState: Todo[] = [];
 
+// tslint:disable-next-line: typedef
 export function TodoReducer(state: Todo[] = initialState, action: TodoActions.TodoActionType) {
     switch (action.type) {
         case TodoActions.ADD_TODO_SUCCESS: {

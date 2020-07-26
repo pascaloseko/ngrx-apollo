@@ -16,13 +16,11 @@ export class AppComponent implements OnInit {
     private store: Store<AppState>,
   ){}
 
-  // tslint:disable-next-line: typedef
-  ngOnInit() {
+  ngOnInit(): void {
     this.loadTodos();
   }
 
-  // tslint:disable-next-line: typedef
-  loadTodos() {
+  loadTodos(): void {
     this.store.dispatch(new TodoActions.LoadTodosAction());
   }
 }

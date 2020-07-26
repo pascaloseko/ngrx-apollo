@@ -8,7 +8,7 @@ import { catchError, map, switchMap } from 'rxjs/operators';
 
 import * as TodosActions from './todo.actions';
 
-const SERVER_GRAPHQL = 'http://localhost:8080/query';
+const SERVER_GRAPHQL = 'https://fathomless-ridge-84301.herokuapp.com/query';
 
 @Injectable()
 export class TodoEffects {
