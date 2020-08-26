@@ -1,9 +1,9 @@
 steps:
   # Install
-  - name: "gcr.io/cloud-builders/npm:node-10.10.0"
+  - name: "gcr.io/cloud-builders/npm:node-10.13"
     args: ["install"]
   # Build
-  - name: "gcr.io/cloud-builders/npm:node-10.10.0"
+  - name: "gcr.io/cloud-builders/npm:node-10.13"
     args: ["run", "build"]
   # Deploy
   - name: "gcr.io/$PROJECT_ID/firebase"
