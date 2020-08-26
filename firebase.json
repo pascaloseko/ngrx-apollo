@@ -9,7 +9,7 @@
     "rewrites": [
       {
         "source": "**",
-        "destination": "/index.html"
+        "destination": "/todo-ngrx-graphql/index.html"
       }
     ]
   }
