@@ -17,10 +17,6 @@ export class AppComponent implements OnInit {
   ){}
 
   ngOnInit(): void {
-    this.loadTodos();
-  }
-
-  loadTodos(): void {
     this.store.dispatch(new TodoActions.LoadTodosAction());
   }
 }
